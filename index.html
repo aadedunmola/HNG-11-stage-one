@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG 11 Stage one</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="top-container">
+      <img
+        class="top-cloud"
+        src="images/CSS - My Site Images/cloud.png"
+        alt="cloud-img"
+      />
+      <h1 data-testid="slackDisplayName">I'm Adeniyi Adedunmola</h1>
+      <p>a developer</p>
+      <img
+        class="bottom-cloud"
+        src="images/CSS - My Site Images/cloud.png"
+        alt="cloud-img"
+      />
+      <img src="images/CSS - My Site Images/mountain.png" alt="cloud-img" />
+    </header>
+
+    <main class="middle-container">
+      <article class="profile">
+        <img
+          src="images/CSS - My Site Images/5856.jpg"
+          alt="adedunmola-adeniyi"
+          data-testid="slackProfilePicture"
+          style="height: 15%; width: 15%"
+        />
+        <h2>Slack Info</h2>
+        <p class="text">
+          I'm Adeniyi Adedunmola, which is also my slack name. I'm enthusiastic
+          about technology, also a beginner in frontend
+        </p>
+      </article>
+
+      <hr />
+
+      <main class="middle-container">
+        <article class="goals">
+          <h2>My Goals</h2>
+          <p>
+            My tech goals for the next two years are building fast rising social
+            media applications for the world at large.
+          </p>
+        </article>
+      </main>
+
+      <main class="middle-container">
+        <h2>Links</h2>
+        <a href="http://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+        <a href="http://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+        <a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink"
+          >Scrape Any Web</a
+        >
+      </main>
+
+      <main class="timeandTracks">
+        <h2>Day and Time.</h2>
+        <section class="timeandTrack-row">
+          <img
+            class="timeandTrack"
+            src="images/CSS - My Site Images/42502.jpg"
+            alt="computer"
+          />
+          <h3>Current day of the week</h3>
+          <p>Day: <span data-testid="currentDay" id="dayOfWeek"></span></p>
+        </section>
+        <section class="timeandTrack-row">
+          <img
+            class="UTC-time"
+            src="images/CSS - My Site Images/set_of_glyph_clocks.jpg"
+            alt="utc time"
+          />
+          <h3>Current UTC time in milliseconds</h3>
+          <p>Time:<span data-testid="currentTimeUTC" id="utcTime"></span></p>
+        </section>
+      </main>
+      <hr />
+      <figure class="contact-me">
+        <h2>Slack Email.</h2>
+        <h3>Here is my slack email:</h3>
+        <p class="message" data-testid="slackEmail">aadedunmola26@gmail.com</p>
+        <a class="btn" href="mailto:aadedunmola26@gmail..com">CONTACT ME</a>
+      </figure>
+    </main>
+
+    <footer class="bottom-container">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/adedunmola-adeniyi-51420b270?trk=contact-info"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="#">Twitter</a>
+      <a
+        class="footer-link"
+        data-testid="githubURL"
+        href="https://github.com/aadedunmola/hng-stage-one"
+        >Github</a
+      >
+      <p class="copyright">© 2024 Adeniyi Adedunmola.</p>
+    </footer>
+
+    <script>
+      const currentUTCTimeElement = document.getElementById("utcTime");
+      const currentUTCTime = Date.now(); // Get current UTC time in milliseconds
+
+      currentUTCTimeElement.textContent = currentUTCTime;
+    </script>
+    <script>
+      const daysOfWeek = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const today = new Date();
+      const dayOfWeek = today.getDay();
+      const currentDayOfWeek = daysOfWeek[dayOfWeek];
+      const dayOfWeekElement = document.getElementById("dayOfWeek");
+      dayOfWeekElement.textContent = currentDayOfWeek;
+    </script>
+  </body>
+</html>

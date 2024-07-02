@@ -1,0 +1,186 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-family: 'Merriweather', serif;
+    color: #40514e;
+}
+
+
+h1 {
+    margin: 50px;
+    margin-bottom: 0px;
+    font-family: 'Sacramento', cursive;
+    font-family: 5.625rem;
+    line-height: 2;
+    color: #66bfbf;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66bfbf;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+.top-container {
+    background-color: #C4DFDF;
+    padding-top: 100px;
+    @media (max-width: 628px){ background-image: none };
+}
+
+.middle-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.middle-container, a {
+    color: black;
+    padding: .5rem;
+
+}
+
+.bottom-container {
+
+    background-color: #11999e;
+    padding: 50px 0px 20px;
+}
+
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+
+}
+
+.timeandTrack-row {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: left;
+    line-height: 2;
+}
+
+
+.timeandTrack {
+    float: left;
+    margin-right: 30px;
+    width: 25%;
+    border-radius: 6.25rem;
+
+}
+
+
+.UTC-time{
+    width: 25%;
+    margin-left: 30px;
+    float: right;
+}
+
+
+
+.text {
+    width: 30%;
+    margin: auto;
+}
+
+p {
+    line-height: 2;
+}
+
+span {
+    text-decoration: none;
+}
+
+hr {
+    border: dotted#eaf6f6;
+    width: 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto 100px auto;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px auto;
+}
+
+.contact-me {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-me .btn {
+    background: #11cdd4;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me .btn:hover {
+    background: #30e3cb;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0px 20px 0px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .top-cloud, .bottom-cloud {
+        display: none;
+    }
+
+    .timeandTrack-row {
+        flex-direction: column;
+    }
+
+    .timeandTrack, .UTC-time {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeandTrack img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .UTC-time {
+        margin-left: 0;
+    }
+}
